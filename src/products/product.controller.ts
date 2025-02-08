@@ -20,7 +20,7 @@ export class ProductsController {
   getAllProducts(): ProductSummary[] {
     return this.productsService.getAllProducts();
   }
-  git init
+
   @Get('search')
   getProducts(@Query('search') search: string): ProductDetail[] {
     const product = this.productsService.getProducts(search);
